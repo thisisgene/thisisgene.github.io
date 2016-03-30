@@ -1,0 +1,70 @@
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+  background-image: url('back.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  overflow: hidden;
+  /*position: absolute;*/
+}
+
+#logo {
+  color: #bcb;
+  font-size: 12em;
+  text-align: center;
+  -webkit-transition: text-shadow .4s;
+  -moz-transition: text-shadow .4s;
+  -o-transition: text-shadow .4s;
+  -ms-transition: text-shadow .4s;
+  transition: text-shadow .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  -ms-transition: all .4s;
+  transition: all .4s;
+
+  margin-bottom: 0;
+  cursor: default;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+#logo:hover {
+  /*text-shadow: 0 0 .1em #aca;*/
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+}
+
+#soon {
+  font-size: 1.5em;
+  letter-spacing: .2em;
+  color: #aca;
+  text-align: center;
+  text-shadow: 0 0 .1em #aca;
+  opacity: 0;
+  -webkit-transition: opacity .8s ease-in-out;
+  cursor: default;
+}
+
+#logo:hover ~ p {
+  opacity: 1;
+}
+
+@media screen and (max-width: 920px) {
+  #logo {
+    font-size: 8em;
+    margin-top: 2em;
+  }
+}
