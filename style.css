@@ -2,10 +2,7 @@ body {
   font-family: Helvetica;
   font-size: 16px;
   background-image: url('back.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -61,7 +58,15 @@ body {
 #logo:hover ~ p {
   opacity: 1;
 }
+@media screen and (min-width: 921px) {
+  body {
 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
 @media screen and (max-width: 920px) {
   #logo {
     font-size: 8em;
